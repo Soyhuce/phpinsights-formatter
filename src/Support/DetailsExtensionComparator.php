@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Soyhuce\Phpinsights\Support;
+namespace Soyhuce\PhpInsights\Support;
 
 final class DetailsExtensionComparator
 {
