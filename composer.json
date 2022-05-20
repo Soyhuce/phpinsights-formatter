@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "soyhuce/phpinsights-formatter",
+    "description": "Provides formatters for Phpinsights",
     "keywords": [
-        ":vendor_name",
+        "Soyhuce",
         "laravel",
-        ":package_slug"
+        "phpinsights-formatter"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/soyhuce/phpinsights-formatter",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Bastien Philippe",
+            "email": "bastien.philippe@soyhuce.fr",
             "role": "Developer"
         }
     ],
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Soyhuce\\PhpinsightsFormatter\\": "src",
+            "Soyhuce\\PhpinsightsFormatter\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Soyhuce\\PhpinsightsFormatter\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -55,15 +55,19 @@
         ]
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Soyhuce\\PhpinsightsFormatter\\PhpinsightsFormatterServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "PhpinsightsFormatter": "Soyhuce\\PhpinsightsFormatter\\Facades\\PhpinsightsFormatter"
             }
         }
     },

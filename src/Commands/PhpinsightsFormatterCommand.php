@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace VendorName\Skeleton\Commands;
+namespace Soyhuce\PhpinsightsFormatter\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class PhpinsightsFormatterCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'phpinsights-formatter';
 
     public $description = 'My command';
 

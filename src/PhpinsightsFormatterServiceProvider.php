@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace VendorName\Skeleton;
+namespace Soyhuce\PhpinsightsFormatter;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Soyhuce\PhpinsightsFormatter\Commands\PhpinsightsFormatterCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class PhpinsightsFormatterServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('phpinsights-formatter')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_phpinsights-formatter_table')
+            ->hasCommand(PhpinsightsFormatterCommand::class);
     }
 }
