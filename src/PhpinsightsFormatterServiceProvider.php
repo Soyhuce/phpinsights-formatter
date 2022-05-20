@@ -2,9 +2,9 @@
 
 namespace Soyhuce\PhpinsightsFormatter;
 
+use Soyhuce\PhpinsightsFormatter\Commands\PhpinsightsFormatterCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Soyhuce\PhpinsightsFormatter\Commands\PhpinsightsFormatterCommand;
 
 class PhpinsightsFormatterServiceProvider extends PackageServiceProvider
 {
