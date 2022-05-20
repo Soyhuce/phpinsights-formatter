@@ -1,4 +1,6 @@
-# Provides formatters for Phpinsights
+![alt text](https://soyhuce.fr/wp-content/uploads/2020/06/logo-soyhuce-dark-1.png "Soyhuce")
+
+# PhpInsights formatters
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/soyhuce/phpinsights-formatter.svg?style=flat-square)](https://packagist.org/packages/soyhuce/phpinsights-formatter)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/soyhuce/phpinsights-formatter/run-tests?label=tests)](https://github.com/soyhuce/phpinsights-formatter/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -6,7 +8,7 @@
 [![GitHub PHPStan Action Status](https://img.shields.io/github/workflow/status/soyhuce/phpinsights-formatter/PHPStan?label=phpstan)](https://github.com/soyhuce/phpinsights-formatter/actions?query=workflow%3APHPStan+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/soyhuce/phpinsights-formatter.svg?style=flat-square)](https://packagist.org/packages/soyhuce/phpinsights-formatter)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Ce package permet l'ajout de formatters pour [PhpInsights](https://phpinsights.com/)
 
 ## Installation
 
@@ -16,44 +18,30 @@ You can install the package via composer:
 composer require soyhuce/phpinsights-formatter
 ```
 
-You can publish and run the migrations with:
+### Text Formatter
 
+Utilisez le formatter via
 ```bash
-php artisan vendor:publish --tag="phpinsights-formatter-migrations"
-php artisan migrate
+php artisan insights --format=\\Soyhuce\\PhpInsights\\TextFormatter > insights.txt
 ```
 
-You can publish the config file with:
+### Markdown Formatter
 
+Utilisez le formatter via
 ```bash
-php artisan vendor:publish --tag="phpinsights-formatter-config"
+php artisan insights --format=\\Soyhuce\\PhpInsights\\MarkdownFormatter
 ```
 
-This is the contents of the published config file:
+Le résultat sera stocké sous `insights-full.md`
 
-```php
-return [
-];
-```
+### Light Markdown Formatter
 
-Optionally, you can publish the views using
-
+Utilisez le formatter via
 ```bash
-php artisan vendor:publish --tag="phpinsights-formatter-views"
+php artisan insights --format=\\Soyhuce\\PhpInsights\\LightMarkdownFormatter
 ```
 
-## Usage
-
-```php
-$phpinsightsFormatter = new Soyhuce\PhpinsightsFormatter();
-echo $phpinsightsFormatter->echoPhrase('Hello, Soyhuce!');
-```
-
-## Testing
-
-```bash
-composer test
-```
+Le résultat sera stocké sous `insights.md`
 
 ## Changelog
 
