@@ -1,13 +1,16 @@
 parameters:
-  ignoreErrors:
-    - message: "#^Offset string on array\\{\\} on left side of \\?\\?\\= does not exist\\.$#"
-      count: 1
-      path: src/MarkdownFormatter.php
+	ignoreErrors:
+		-
+			message: "#^Offset string on array\\{\\} on left side of \\?\\?\\= does not exist\\.$#"
+			count: 1
+			path: src/FullMarkdownFormatter.php
 
-    - message: "#^Parameter \\#1 \\$path of function realpath expects string, string\\|false given\\.$#"
-      count: 1
-      path: src/MarkdownFormatter.php
+		-
+			message: "#^Parameter \\#1 \\$path of function realpath expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/FullMarkdownFormatter.php
 
-    - message: "#^Parameter \\#1 \\$path of function realpath expects string, string\\|false given\\.$#"
-      count: 1
-      path: src/TextFormatter.php
+		-
+			message: "#^Parameter \\#1 \\$path of function realpath expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/TextFormatter.php
