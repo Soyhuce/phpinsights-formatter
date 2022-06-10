@@ -15,7 +15,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use function assert;
 use function count;
 
-class MarkdownFormatter extends TextFormatter
+class FullMarkdownFormatter extends TextFormatter
 {
     protected string $filename = 'insights-full.md';
 
