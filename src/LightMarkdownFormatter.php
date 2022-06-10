@@ -4,7 +4,7 @@ namespace Soyhuce\PhpInsights;
 
 use NunoMaduro\PhpInsights\Domain\Insights\InsightCollection;
 
-class LightMarkdownFormatter extends MarkdownFormatter
+class LightMarkdownFormatter extends FullMarkdownFormatter
 {
     protected string $filename = 'insights.md';
 
