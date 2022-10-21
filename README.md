@@ -32,16 +32,16 @@ Utilisez le formatter via
 php artisan insights --format=\\Soyhuce\\PhpInsights\\MarkdownFormatter
 ```
 
-Le résultat sera stocké sous `insights-full.md`
+Le résultat sera stocké sous `insights.md`
 
-### Light Markdown Formatter
+### Full Markdown Formatter
 
 Utilisez le formatter via
 ```bash
-php artisan insights --format=\\Soyhuce\\PhpInsights\\LightMarkdownFormatter
+php artisan insights --format=\\Soyhuce\\PhpInsights\\FullMarkdownFormatter
 ```
 
-Le résultat sera stocké sous `insights.md`
+Le résultat sera stocké sous `insights-full.md`
 
 ## Changelog
 
