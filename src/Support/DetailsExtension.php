@@ -18,7 +18,7 @@ class DetailsExtension
 {
     use ForwardsCalls;
 
-    private Details $details;
+    private readonly Details $details;
 
     private Insight $insight;
 
