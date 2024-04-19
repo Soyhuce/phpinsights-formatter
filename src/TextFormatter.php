@@ -196,7 +196,7 @@ class TextFormatter implements Formatter
                 $details = $insight->getDetails();
                 usort($details, $detailsComparator);
 
-                /** @var \NunoMaduro\PhpInsights\Domain\Details $detail */
+                /** @var Details $detail */
                 foreach ($details as $detail) {
                     $detailString = $this->formatFileLine($detail);
 
